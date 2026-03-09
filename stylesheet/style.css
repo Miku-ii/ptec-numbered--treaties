@@ -1,0 +1,16 @@
+body {
+        background-color: rgb(113, 233, 229);
+        color: #e7ece2;
+      }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      p {
+        font-size: 24px;
+      }
+      h2 {
+        color: rgb(11, 192, 164);
+        font-style: italic;
+      }
+      
