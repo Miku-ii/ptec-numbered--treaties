@@ -11,8 +11,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 40px;
-background:rgb(177, 236, 188);
-border-bottom:1px solid #3de37a;
+background:rgb(139, 231, 156);
+border-bottom:1px solid #3cda76;
 
 }
 
@@ -44,36 +44,31 @@ main{
     padding:40px;
 }
 
-.content-row
-    display:flex;
-    align-items:center;
-    gap:30px;
-    margin-bottom:50px;
-    background:white;
-    padding:25px;
-    border-radius:10px;
+.content-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
 
 .reverse{
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
 }
 
 .content-row img{
-    width:350px;
-    border-radius:10px;
+    width: 350px;
+    border-radius: 10px;
 }
 
 .text{
-    max-width:500px;
+    max-width: 500px;
 }
 
-<!--.highlight-->
-
-.highlight{
-
-color:#acf8fc;
-
-font-weight:bold;
-
+.highlight {
+    background: rgb(255, 255, 0, 0.5);
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
 h1{color:rgb(95, 229, 222);}
@@ -81,9 +76,10 @@ h2{color:#5bb1e7;}
 h3{color:#6699e1;}
 h4{color:#63c4e2;}
 
-footer{
-    text-align:center;
-    padding:20px;
-    background:#06466b;
-    color:white;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #06466b;
+    color: white;
+    margin-top: 40px;
 }
