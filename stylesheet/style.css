@@ -377,19 +377,19 @@ figcaption {
 }
 
 a:not(nav a) {
-  color: #2C5F2D;
+  color: #242725;
   text-decoration-thickness: 2px;
 }
 
 a:not(nav a):hover {
-  color: #D4A373;
+  color: #edf164;
 }
 
 button,
 .button,
 .quick-facts a {
   display: inline-block;
-  background-color: #2C5F2D;
+  background-color: #8c9c32;
   color: white;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
@@ -411,7 +411,7 @@ footer {
   text-align: center;
   border-top: 1px solid #E6E2DA;
   font-size: 1.4rem;
-  color: #5E5E5E;
+  color: #221e1e;
 }
 
 @media (max-width: 768px) {
