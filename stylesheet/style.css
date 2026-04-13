@@ -50,7 +50,7 @@ body {
 
 .hero h1 {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 60px;
@@ -74,11 +74,10 @@ main {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-    overflow: hidden;
+  overflow: hidden;
 }
 
-<!--图片列和文字列-->
-.col {
+<!--图片列和文字列-->.col {
   width: 48%;
 }
 
@@ -91,8 +90,7 @@ main {
   float: left;
 }
 
-<!--反向布局：图片在右，文字在左-->
-.content-row.reverse .img-col {
+<!--反向布局：图片在右，文字在左-->.content-row.reverse .img-col {
   float: right;
   margin-left: 4%;
   margin-right: 0;
@@ -188,13 +186,254 @@ footer {
   margin-top: 30px;
 }
 
-  .nav nav a {
-    margin-right: 15px;
-    font-size: 18px;
+.nav nav a {
+  margin-right: 15px;
+  font-size: 18px;
 }
 
-  .hero h1 {
-    font-size: 40px;
-    padding: 15px 20px;
-    width: 90%;
+.hero h1 {
+  font-size: 40px;
+  padding: 15px 20px;
+  width: 90%;
+}
+
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #F9F8F6;
+  color: #2C2C2C;
+}
+
+.w3-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
+.w3-teal {
+  background-color: #FFFFFF;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0 1rem;
+  border-bottom: 2px solid #D4A373;
+  margin-bottom: 2rem;
+}
+
+.logo h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: #2C5F2D;
+}
+
+.logo h3 span {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  color: #6B6B6B;
+  margin-top: 0.3rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #2C5F2D;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #D4A373;
+  border-bottom: 2px solid #D4A373;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1F3B2C;
+  margin: 1.5rem 0 1rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: #2C5F2D;
+  border-left: 5px solid #D4A373;
+  padding-left: 1.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.8rem;
+  color: #3A6B3B;
+}
+
+p,
+li,
+figcaption {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  word-spacing: normal;
+  margin-bottom: 1.2rem;
+}
+
+ul,
+ol {
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin: 0.6rem 0;
+}
+
+.content-block {
+  margin: 3rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #EDE8E0;
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.two-columns>div,
+.two-columns>figure {
+  flex: 1;
+}
+
+.two-columns img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.4rem;
+  color: #6B6B6B;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-images {
+  width: 100%;
+}
+
+a:not(nav a) {
+  color: #2C5F2D;
+  text-decoration-thickness: 2px;
+}
+
+a:not(nav a):hover {
+  color: #D4A373;
+}
+
+button,
+.button,
+.quick-facts a {
+  display: inline-block;
+  background-color: #2C5F2D;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+button:hover,
+.button:hover,
+.quick-facts a:hover {
+  background-color: #D4A373;
+  color: #1F1F1F;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #E6E2DA;
+  font-size: 1.4rem;
+  color: #5E5E5E;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
   }
+
+  .two-columns {
+    flex-direction: column;
+  }
+
+  .w3-container {
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+}
