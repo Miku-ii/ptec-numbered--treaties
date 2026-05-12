@@ -415,6 +415,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+}
   header {
     flex-direction: column;
     text-align: center;
@@ -436,4 +437,6 @@ footer {
   h2 {
     font-size: 2.2rem;
   }
-}
+
+
+
