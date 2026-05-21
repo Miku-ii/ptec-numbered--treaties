@@ -473,24 +473,27 @@ header {
 .header-container h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #333;
+    color: #333333;
 }
 
 .header-container p {
     margin: 5px 0 0 0;
-    color: #666;
+    color: #666666;
     font-style: italic;
 }
 
 nav {
     background-color: #EEEEEE;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid #CCCCCC;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 12px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
 }
@@ -499,68 +502,101 @@ nav ul li {
     margin: 0 20px;
 }
 
-nav a:link { 
-    color: #8B4513; 
-    text-decoration: none; 
-    font-weight: bold; 
+nav a:link {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav a:visited { 
-    color: #5D2E0C; 
+nav a:visited {
+    color: #5D2E0C;
 }
 
-nav a:hover { 
-    color: #000; 
-    text-decoration: underline; 
+nav a:hover {
+    color: #000000;
+    text-decoration: underline;
 }
 
 nav a.active {
-    color: #000;
+    color: #000000;
     border-bottom: 2px solid #8B4513;
 }
 
-nav a:focus { 
-    outline: 3px solid #D4AF37; 
+nav a:focus {
+    outline: 3px solid #D4AF37;
 }
 
-nav a:active { 
-    color: red; 
+nav a:active {
+    color: #FF0000;
 }
 
-.Medal-page main {
+main {
     max-width: 960px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 10px 20px;
     background-color: #FFFFFF;
     -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
 
-.intro-section {
-    margin-bottom: 40px;
+/* Border and spacing control for each individual knowledge point topic */
+.theme-box {
+    border: 1px solid #D2B48C;    
+    background-color: #FFFDFB;   
+    border-radius: 6px;            
+    padding: 25px;  
+    margin: 30px 0;               
+    -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.03);
+    -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.03);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.03);
 }
 
+/* Eliminate the top margin of the first heading inside each theme box */
+.theme-box h2, .theme-box h3 {
+    margin-top: 0;
+}
+
+/* Eliminate the bottom margin of the last paragraph inside each theme box */
+.theme-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Visual elements analysis section's Flex layout adjustments */
 .medal-container {
-    margin: 30px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 .medal-box {
+    flex: 1;
     text-align: center;
-    position: relative;
-    margin-bottom: 40px;
 }
 
 .medal-box img {
-    width: 350px;
-    border: 8px solid #E8E8E8;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border: 6px solid #E8E8E8;
 }
 
+.medal-details {
+    flex: 1.5;
+}
+
+/* Visual elements analysis section's Flex layout adjustments */
 .medal-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    margin: 30px 0;
+    gap: 15px;
+    margin: 25px 0;
 }
 
 .medal-item {
@@ -570,12 +606,11 @@ nav a:active {
 
 .medal-item img {
     width: 100%;
-    max-width: 250px;
     height: auto;
     border: 4px solid #E8E8E8;
-    background-color: white;
-    -webkit-transition: transform 0.3s;
-    -moz-transition: transform 0.3s;
+    background-color: #FFFFFF;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
 }
 
@@ -587,25 +622,28 @@ nav a:active {
 
 .image-caption {
     font-style: italic;
-    color: #666;
-    margin-top: 10px;
+    color: #666666;
+    margin-top: 8px;
     font-size: 0.85em;
     line-height: 1.4;
 }
 
 h2, h3 {
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     line-height: 1.3;
     color: #8B4513;
 }
 
-p {
+p, ul li {
     line-height: 1.8;
-    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 18px;
 }
 
 ul li {
-    line-height: 1.8;
+    margin-bottom: 8px;
 }
 
 footer {
@@ -616,6 +654,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .medal-container {
+        flex-direction: column;
+    }
     .medal-row {
         flex-direction: column;
         align-items: center;
