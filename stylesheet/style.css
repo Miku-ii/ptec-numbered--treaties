@@ -1,4 +1,4 @@
-body {
+<body class="Treaty1-page">
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
   color: #333;
@@ -213,13 +213,13 @@ body {
   box-sizing: border-box;
 }
 
-body {
+<body class="Treaties-page">
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background-color: #F9F8F6;
   color: #2C2C2C;
 }
 
-.Treaties-page.w3-container {
+.w3-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -452,7 +452,7 @@ footer {
 
 
 
-body {
+<body class="Medals-page">
     font-family: "Segoe UI", Arial, sans-serif;
     background-color: #F9F9F9;
     color: #222222;
